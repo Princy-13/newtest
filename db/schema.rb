@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2021_06_17_073750) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "portfolios", force: :cascade do |t|
+  create_table "portfolios", force: :cascade do |t| 
     t.string "title"
     t.string "subtitle"
     t.text "body"
