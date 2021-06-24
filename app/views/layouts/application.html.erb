@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Newtest</title>
+    <title><%=@page_title%></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <meta name ="keywords" content="<%=@seo_keywords%>">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+  <div>
+  <div> <%=link_to"home", root_path%></div>
+  <div><%=link_to"about", about_path%></div>
+  <div><%=link_to"contact", contact_path%></div>
+  <div><%=link_to"blog", blogs_path%></div>
+  <div><%=link_to"portfolio", portfolios_path%></div>
+  
+  </div>
     <%= yield %>
   </body>
 </html>
